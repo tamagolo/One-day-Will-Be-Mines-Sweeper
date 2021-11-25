@@ -66,7 +66,7 @@ function cellClicked(elCell, i, j) {
     var cell = gBoard[i][j];
     if (cell.isMine) {
         elCell.innerHTML = BLOWN;
-        h(cell.style['content-visibility'] = 'visible');
+        cell.isShown = true;
         checkGameOver();
         console.log('boooom!')
     } else if (cell.minesAroundCount === 0) {
@@ -125,7 +125,7 @@ function locatetMine(board) {
 
 
 function checkNegs(mat, i, j) {
-    
+
     for (var a = i - 1; a <= i + 1; a++) {
         if (a < 0 || i >= mat.length) continue;
         for (var b = j - 1; b <= j + 1; j++) {
