@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+    background-color: lightcyan;
+}
+
+h2 {
+    font-weight: lighter;
+
+}
+
+.mine {
+    content-visibility: hidden;
+}
+
+.empty {
+    content-visibility: hidden;
+    color: mediumvioletred;
+    text-align: center;
+
+
+}
+
+.board-container {
+    margin: auto;
+
+
+}
+
+td {
+    height: 30px;
+    width: 30px;
+    background-color: lightgrey
+}
