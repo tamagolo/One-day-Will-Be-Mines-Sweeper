@@ -8,11 +8,8 @@ h2 {
 
 }
 
-.mine {
-    content-visibility: hidden;
-}
-
-.empty {
+.cell{
+    background-color: darkgray;
     content-visibility: hidden;
     color: mediumvioletred;
     text-align: center;
@@ -29,5 +26,12 @@ h2 {
 td {
     height: 30px;
     width: 30px;
-    background-color: lightgrey
+    /* background-color: rgb(223, 24, 24) */
+    
+}
+.button {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+    font-size: x-large;
 }
