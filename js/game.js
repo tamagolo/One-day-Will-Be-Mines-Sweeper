@@ -16,8 +16,8 @@ var isclicked = false;
 var gTimer = 0;
 
 var gLevel = {
-    SIZE: 12,
-    MINES: 5
+    SIZE: 4,
+    MINES: 2
 }
 
 var gGame = {
@@ -207,7 +207,7 @@ function expandShown(board, i, j) {
             var cell = board[a][b];
             if (cell.isShown || cell.isMine) continue
             cell.isShown = true;
-            if (cell.minesAroundCount > 0 ) {
+            if (cell.minesAroundCount > 0) {
                 var tdId = `cell-${a}-${b}`;
                 var elCell = document.querySelector('#' + tdId);
                 gGame.shownCount++;
